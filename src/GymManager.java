@@ -84,7 +84,7 @@ public class GymManager{
 
     public void findMemberById(String id){
         for(int i=0;i<memberCount;i++){
-            if(members[i]!=null&&members[i].getId().equals(id)){
+            if(members[i]!=null&&members[i].getId().equals(id).equalsIgnoreCase()){
                 members[i].displayProfile();
                 return;
             }
